@@ -1,0 +1,1729 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "gpuType": "T4",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    },
+    "accelerator": "GPU",
+    "widgets": {
+      "application/vnd.jupyter.widget-state+json": {
+        "version_major": 2,
+        "version_minor": 0,
+        "state": {
+          "57d0b10ea1234d8aaa9094a7b507d96b": {
+            "model_module": "@jupyter-widgets/controls",
+            "model_name": "HBoxModel",
+            "model_module_version": "1.5.0",
+            "state": {
+              "_dom_classes": [],
+              "_model_module": "@jupyter-widgets/controls",
+              "_model_module_version": "1.5.0",
+              "_model_name": "HBoxModel",
+              "_view_count": null,
+              "_view_module": "@jupyter-widgets/controls",
+              "_view_module_version": "1.5.0",
+              "_view_name": "HBoxView",
+              "box_style": "",
+              "children": [
+                "IPY_MODEL_e00c20ca2f964a74bb173f966ecdd86d",
+                "IPY_MODEL_a81aa5b5cc4a483eb673236f92d4ed28",
+                "IPY_MODEL_5021b967d67846d7a87210ea043e039f"
+              ],
+              "layout": "IPY_MODEL_91fc1a5d136a4e3893f5c33697e666db"
+            }
+          },
+          "e00c20ca2f964a74bb173f966ecdd86d": {
+            "model_module": "@jupyter-widgets/controls",
+            "model_name": "HTMLModel",
+            "model_module_version": "1.5.0",
+            "state": {
+              "_dom_classes": [],
+              "_model_module": "@jupyter-widgets/controls",
+              "_model_module_version": "1.5.0",
+              "_model_name": "HTMLModel",
+              "_view_count": null,
+              "_view_module": "@jupyter-widgets/controls",
+              "_view_module_version": "1.5.0",
+              "_view_name": "HTMLView",
+              "description": "",
+              "description_tooltip": null,
+              "layout": "IPY_MODEL_db24bd6b7b554d53a43506f39ee4e9d6",
+              "placeholder": "​",
+              "style": "IPY_MODEL_16b52639e9b34be5b534cd2c96b656c0",
+              "value": "Loading weights: 100%"
+            }
+          },
+          "a81aa5b5cc4a483eb673236f92d4ed28": {
+            "model_module": "@jupyter-widgets/controls",
+            "model_name": "FloatProgressModel",
+            "model_module_version": "1.5.0",
+            "state": {
+              "_dom_classes": [],
+              "_model_module": "@jupyter-widgets/controls",
+              "_model_module_version": "1.5.0",
+              "_model_name": "FloatProgressModel",
+              "_view_count": null,
+              "_view_module": "@jupyter-widgets/controls",
+              "_view_module_version": "1.5.0",
+              "_view_name": "ProgressView",
+              "bar_style": "success",
+              "description": "",
+              "description_tooltip": null,
+              "layout": "IPY_MODEL_33daf9d8defd47ad8ce73f336d86c9b6",
+              "max": 146,
+              "min": 0,
+              "orientation": "horizontal",
+              "style": "IPY_MODEL_9ee451b3fc3149ab978337b2a30f9993",
+              "value": 146
+            }
+          },
+          "5021b967d67846d7a87210ea043e039f": {
+            "model_module": "@jupyter-widgets/controls",
+            "model_name": "HTMLModel",
+            "model_module_version": "1.5.0",
+            "state": {
+              "_dom_classes": [],
+              "_model_module": "@jupyter-widgets/controls",
+              "_model_module_version": "1.5.0",
+              "_model_name": "HTMLModel",
+              "_view_count": null,
+              "_view_module": "@jupyter-widgets/controls",
+              "_view_module_version": "1.5.0",
+              "_view_name": "HTMLView",
+              "description": "",
+              "description_tooltip": null,
+              "layout": "IPY_MODEL_a511bb278e21447fad2994acb9036b25",
+              "placeholder": "​",
+              "style": "IPY_MODEL_0286f7c3230c496b840c77f6d994aec2",
+              "value": " 146/146 [00:00&lt;00:00, 2168.94it/s]"
+            }
+          },
+          "91fc1a5d136a4e3893f5c33697e666db": {
+            "model_module": "@jupyter-widgets/base",
+            "model_name": "LayoutModel",
+            "model_module_version": "1.2.0",
+            "state": {
+              "_model_module": "@jupyter-widgets/base",
+              "_model_module_version": "1.2.0",
+              "_model_name": "LayoutModel",
+              "_view_count": null,
+              "_view_module": "@jupyter-widgets/base",
+              "_view_module_version": "1.2.0",
+              "_view_name": "LayoutView",
+              "align_content": null,
+              "align_items": null,
+              "align_self": null,
+              "border": null,
+              "bottom": null,
+              "display": null,
+              "flex": null,
+              "flex_flow": null,
+              "grid_area": null,
+              "grid_auto_columns": null,
+              "grid_auto_flow": null,
+              "grid_auto_rows": null,
+              "grid_column": null,
+              "grid_gap": null,
+              "grid_row": null,
+              "grid_template_areas": null,
+              "grid_template_columns": null,
+              "grid_template_rows": null,
+              "height": null,
+              "justify_content": null,
+              "justify_items": null,
+              "left": null,
+              "margin": null,
+              "max_height": null,
+              "max_width": null,
+              "min_height": null,
+              "min_width": null,
+              "object_fit": null,
+              "object_position": null,
+              "order": null,
+              "overflow": null,
+              "overflow_x": null,
+              "overflow_y": null,
+              "padding": null,
+              "right": null,
+              "top": null,
+              "visibility": null,
+              "width": null
+            }
+          },
+          "db24bd6b7b554d53a43506f39ee4e9d6": {
+            "model_module": "@jupyter-widgets/base",
+            "model_name": "LayoutModel",
+            "model_module_version": "1.2.0",
+            "state": {
+              "_model_module": "@jupyter-widgets/base",
+              "_model_module_version": "1.2.0",
+              "_model_name": "LayoutModel",
+              "_view_count": null,
+              "_view_module": "@jupyter-widgets/base",
+              "_view_module_version": "1.2.0",
+              "_view_name": "LayoutView",
+              "align_content": null,
+              "align_items": null,
+              "align_self": null,
+              "border": null,
+              "bottom": null,
+              "display": null,
+              "flex": null,
+              "flex_flow": null,
+              "grid_area": null,
+              "grid_auto_columns": null,
+              "grid_auto_flow": null,
+              "grid_auto_rows": null,
+              "grid_column": null,
+              "grid_gap": null,
+              "grid_row": null,
+              "grid_template_areas": null,
+              "grid_template_columns": null,
+              "grid_template_rows": null,
+              "height": null,
+              "justify_content": null,
+              "justify_items": null,
+              "left": null,
+              "margin": null,
+              "max_height": null,
+              "max_width": null,
+              "min_height": null,
+              "min_width": null,
+              "object_fit": null,
+              "object_position": null,
+              "order": null,
+              "overflow": null,
+              "overflow_x": null,
+              "overflow_y": null,
+              "padding": null,
+              "right": null,
+              "top": null,
+              "visibility": null,
+              "width": null
+            }
+          },
+          "16b52639e9b34be5b534cd2c96b656c0": {
+            "model_module": "@jupyter-widgets/controls",
+            "model_name": "DescriptionStyleModel",
+            "model_module_version": "1.5.0",
+            "state": {
+              "_model_module": "@jupyter-widgets/controls",
+              "_model_module_version": "1.5.0",
+              "_model_name": "DescriptionStyleModel",
+              "_view_count": null,
+              "_view_module": "@jupyter-widgets/base",
+              "_view_module_version": "1.2.0",
+              "_view_name": "StyleView",
+              "description_width": ""
+            }
+          },
+          "33daf9d8defd47ad8ce73f336d86c9b6": {
+            "model_module": "@jupyter-widgets/base",
+            "model_name": "LayoutModel",
+            "model_module_version": "1.2.0",
+            "state": {
+              "_model_module": "@jupyter-widgets/base",
+              "_model_module_version": "1.2.0",
+              "_model_name": "LayoutModel",
+              "_view_count": null,
+              "_view_module": "@jupyter-widgets/base",
+              "_view_module_version": "1.2.0",
+              "_view_name": "LayoutView",
+              "align_content": null,
+              "align_items": null,
+              "align_self": null,
+              "border": null,
+              "bottom": null,
+              "display": null,
+              "flex": null,
+              "flex_flow": null,
+              "grid_area": null,
+              "grid_auto_columns": null,
+              "grid_auto_flow": null,
+              "grid_auto_rows": null,
+              "grid_column": null,
+              "grid_gap": null,
+              "grid_row": null,
+              "grid_template_areas": null,
+              "grid_template_columns": null,
+              "grid_template_rows": null,
+              "height": null,
+              "justify_content": null,
+              "justify_items": null,
+              "left": null,
+              "margin": null,
+              "max_height": null,
+              "max_width": null,
+              "min_height": null,
+              "min_width": null,
+              "object_fit": null,
+              "object_position": null,
+              "order": null,
+              "overflow": null,
+              "overflow_x": null,
+              "overflow_y": null,
+              "padding": null,
+              "right": null,
+              "top": null,
+              "visibility": null,
+              "width": null
+            }
+          },
+          "9ee451b3fc3149ab978337b2a30f9993": {
+            "model_module": "@jupyter-widgets/controls",
+            "model_name": "ProgressStyleModel",
+            "model_module_version": "1.5.0",
+            "state": {
+              "_model_module": "@jupyter-widgets/controls",
+              "_model_module_version": "1.5.0",
+              "_model_name": "ProgressStyleModel",
+              "_view_count": null,
+              "_view_module": "@jupyter-widgets/base",
+              "_view_module_version": "1.2.0",
+              "_view_name": "StyleView",
+              "bar_color": null,
+              "description_width": ""
+            }
+          },
+          "a511bb278e21447fad2994acb9036b25": {
+            "model_module": "@jupyter-widgets/base",
+            "model_name": "LayoutModel",
+            "model_module_version": "1.2.0",
+            "state": {
+              "_model_module": "@jupyter-widgets/base",
+              "_model_module_version": "1.2.0",
+              "_model_name": "LayoutModel",
+              "_view_count": null,
+              "_view_module": "@jupyter-widgets/base",
+              "_view_module_version": "1.2.0",
+              "_view_name": "LayoutView",
+              "align_content": null,
+              "align_items": null,
+              "align_self": null,
+              "border": null,
+              "bottom": null,
+              "display": null,
+              "flex": null,
+              "flex_flow": null,
+              "grid_area": null,
+              "grid_auto_columns": null,
+              "grid_auto_flow": null,
+              "grid_auto_rows": null,
+              "grid_column": null,
+              "grid_gap": null,
+              "grid_row": null,
+              "grid_template_areas": null,
+              "grid_template_columns": null,
+              "grid_template_rows": null,
+              "height": null,
+              "justify_content": null,
+              "justify_items": null,
+              "left": null,
+              "margin": null,
+              "max_height": null,
+              "max_width": null,
+              "min_height": null,
+              "min_width": null,
+              "object_fit": null,
+              "object_position": null,
+              "order": null,
+              "overflow": null,
+              "overflow_x": null,
+              "overflow_y": null,
+              "padding": null,
+              "right": null,
+              "top": null,
+              "visibility": null,
+              "width": null
+            }
+          },
+          "0286f7c3230c496b840c77f6d994aec2": {
+            "model_module": "@jupyter-widgets/controls",
+            "model_name": "DescriptionStyleModel",
+            "model_module_version": "1.5.0",
+            "state": {
+              "_model_module": "@jupyter-widgets/controls",
+              "_model_module_version": "1.5.0",
+              "_model_name": "DescriptionStyleModel",
+              "_view_count": null,
+              "_view_module": "@jupyter-widgets/base",
+              "_view_module_version": "1.2.0",
+              "_view_name": "StyleView",
+              "description_width": ""
+            }
+          },
+          "f91a0ac5b4a84c00bbe8d4b00dc1974a": {
+            "model_module": "@jupyter-widgets/controls",
+            "model_name": "HBoxModel",
+            "model_module_version": "1.5.0",
+            "state": {
+              "_dom_classes": [],
+              "_model_module": "@jupyter-widgets/controls",
+              "_model_module_version": "1.5.0",
+              "_model_name": "HBoxModel",
+              "_view_count": null,
+              "_view_module": "@jupyter-widgets/controls",
+              "_view_module_version": "1.5.0",
+              "_view_name": "HBoxView",
+              "box_style": "",
+              "children": [
+                "IPY_MODEL_440e72cb38e2454b89c38a4e6a6b1f83",
+                "IPY_MODEL_f744231e76364bff90a9e449adc8bcd0",
+                "IPY_MODEL_5180a74f7f3e47c2a03e1f8eae8333b6"
+              ],
+              "layout": "IPY_MODEL_a71a8c5f546141468a1d5380c1508971"
+            }
+          },
+          "440e72cb38e2454b89c38a4e6a6b1f83": {
+            "model_module": "@jupyter-widgets/controls",
+            "model_name": "HTMLModel",
+            "model_module_version": "1.5.0",
+            "state": {
+              "_dom_classes": [],
+              "_model_module": "@jupyter-widgets/controls",
+              "_model_module_version": "1.5.0",
+              "_model_name": "HTMLModel",
+              "_view_count": null,
+              "_view_module": "@jupyter-widgets/controls",
+              "_view_module_version": "1.5.0",
+              "_view_name": "HTMLView",
+              "description": "",
+              "description_tooltip": null,
+              "layout": "IPY_MODEL_d3c8c8f994054b0fb59f97a480285323",
+              "placeholder": "​",
+              "style": "IPY_MODEL_6439f9cc036745328a47a2cf54eca686",
+              "value": "Loading weights: 100%"
+            }
+          },
+          "f744231e76364bff90a9e449adc8bcd0": {
+            "model_module": "@jupyter-widgets/controls",
+            "model_name": "FloatProgressModel",
+            "model_module_version": "1.5.0",
+            "state": {
+              "_dom_classes": [],
+              "_model_module": "@jupyter-widgets/controls",
+              "_model_module_version": "1.5.0",
+              "_model_name": "FloatProgressModel",
+              "_view_count": null,
+              "_view_module": "@jupyter-widgets/controls",
+              "_view_module_version": "1.5.0",
+              "_view_name": "ProgressView",
+              "bar_style": "success",
+              "description": "",
+              "description_tooltip": null,
+              "layout": "IPY_MODEL_027e12650677445181e8878fbe7027e0",
+              "max": 146,
+              "min": 0,
+              "orientation": "horizontal",
+              "style": "IPY_MODEL_5415e336d2384533b1365014fcd34326",
+              "value": 146
+            }
+          },
+          "5180a74f7f3e47c2a03e1f8eae8333b6": {
+            "model_module": "@jupyter-widgets/controls",
+            "model_name": "HTMLModel",
+            "model_module_version": "1.5.0",
+            "state": {
+              "_dom_classes": [],
+              "_model_module": "@jupyter-widgets/controls",
+              "_model_module_version": "1.5.0",
+              "_model_name": "HTMLModel",
+              "_view_count": null,
+              "_view_module": "@jupyter-widgets/controls",
+              "_view_module_version": "1.5.0",
+              "_view_name": "HTMLView",
+              "description": "",
+              "description_tooltip": null,
+              "layout": "IPY_MODEL_13a25ae1c7614af08919bc219cc73d02",
+              "placeholder": "​",
+              "style": "IPY_MODEL_579ac7a066914afba579d3889fb484b7",
+              "value": " 146/146 [00:01&lt;00:00, 188.38it/s]"
+            }
+          },
+          "a71a8c5f546141468a1d5380c1508971": {
+            "model_module": "@jupyter-widgets/base",
+            "model_name": "LayoutModel",
+            "model_module_version": "1.2.0",
+            "state": {
+              "_model_module": "@jupyter-widgets/base",
+              "_model_module_version": "1.2.0",
+              "_model_name": "LayoutModel",
+              "_view_count": null,
+              "_view_module": "@jupyter-widgets/base",
+              "_view_module_version": "1.2.0",
+              "_view_name": "LayoutView",
+              "align_content": null,
+              "align_items": null,
+              "align_self": null,
+              "border": null,
+              "bottom": null,
+              "display": null,
+              "flex": null,
+              "flex_flow": null,
+              "grid_area": null,
+              "grid_auto_columns": null,
+              "grid_auto_flow": null,
+              "grid_auto_rows": null,
+              "grid_column": null,
+              "grid_gap": null,
+              "grid_row": null,
+              "grid_template_areas": null,
+              "grid_template_columns": null,
+              "grid_template_rows": null,
+              "height": null,
+              "justify_content": null,
+              "justify_items": null,
+              "left": null,
+              "margin": null,
+              "max_height": null,
+              "max_width": null,
+              "min_height": null,
+              "min_width": null,
+              "object_fit": null,
+              "object_position": null,
+              "order": null,
+              "overflow": null,
+              "overflow_x": null,
+              "overflow_y": null,
+              "padding": null,
+              "right": null,
+              "top": null,
+              "visibility": null,
+              "width": null
+            }
+          },
+          "d3c8c8f994054b0fb59f97a480285323": {
+            "model_module": "@jupyter-widgets/base",
+            "model_name": "LayoutModel",
+            "model_module_version": "1.2.0",
+            "state": {
+              "_model_module": "@jupyter-widgets/base",
+              "_model_module_version": "1.2.0",
+              "_model_name": "LayoutModel",
+              "_view_count": null,
+              "_view_module": "@jupyter-widgets/base",
+              "_view_module_version": "1.2.0",
+              "_view_name": "LayoutView",
+              "align_content": null,
+              "align_items": null,
+              "align_self": null,
+              "border": null,
+              "bottom": null,
+              "display": null,
+              "flex": null,
+              "flex_flow": null,
+              "grid_area": null,
+              "grid_auto_columns": null,
+              "grid_auto_flow": null,
+              "grid_auto_rows": null,
+              "grid_column": null,
+              "grid_gap": null,
+              "grid_row": null,
+              "grid_template_areas": null,
+              "grid_template_columns": null,
+              "grid_template_rows": null,
+              "height": null,
+              "justify_content": null,
+              "justify_items": null,
+              "left": null,
+              "margin": null,
+              "max_height": null,
+              "max_width": null,
+              "min_height": null,
+              "min_width": null,
+              "object_fit": null,
+              "object_position": null,
+              "order": null,
+              "overflow": null,
+              "overflow_x": null,
+              "overflow_y": null,
+              "padding": null,
+              "right": null,
+              "top": null,
+              "visibility": null,
+              "width": null
+            }
+          },
+          "6439f9cc036745328a47a2cf54eca686": {
+            "model_module": "@jupyter-widgets/controls",
+            "model_name": "DescriptionStyleModel",
+            "model_module_version": "1.5.0",
+            "state": {
+              "_model_module": "@jupyter-widgets/controls",
+              "_model_module_version": "1.5.0",
+              "_model_name": "DescriptionStyleModel",
+              "_view_count": null,
+              "_view_module": "@jupyter-widgets/base",
+              "_view_module_version": "1.2.0",
+              "_view_name": "StyleView",
+              "description_width": ""
+            }
+          },
+          "027e12650677445181e8878fbe7027e0": {
+            "model_module": "@jupyter-widgets/base",
+            "model_name": "LayoutModel",
+            "model_module_version": "1.2.0",
+            "state": {
+              "_model_module": "@jupyter-widgets/base",
+              "_model_module_version": "1.2.0",
+              "_model_name": "LayoutModel",
+              "_view_count": null,
+              "_view_module": "@jupyter-widgets/base",
+              "_view_module_version": "1.2.0",
+              "_view_name": "LayoutView",
+              "align_content": null,
+              "align_items": null,
+              "align_self": null,
+              "border": null,
+              "bottom": null,
+              "display": null,
+              "flex": null,
+              "flex_flow": null,
+              "grid_area": null,
+              "grid_auto_columns": null,
+              "grid_auto_flow": null,
+              "grid_auto_rows": null,
+              "grid_column": null,
+              "grid_gap": null,
+              "grid_row": null,
+              "grid_template_areas": null,
+              "grid_template_columns": null,
+              "grid_template_rows": null,
+              "height": null,
+              "justify_content": null,
+              "justify_items": null,
+              "left": null,
+              "margin": null,
+              "max_height": null,
+              "max_width": null,
+              "min_height": null,
+              "min_width": null,
+              "object_fit": null,
+              "object_position": null,
+              "order": null,
+              "overflow": null,
+              "overflow_x": null,
+              "overflow_y": null,
+              "padding": null,
+              "right": null,
+              "top": null,
+              "visibility": null,
+              "width": null
+            }
+          },
+          "5415e336d2384533b1365014fcd34326": {
+            "model_module": "@jupyter-widgets/controls",
+            "model_name": "ProgressStyleModel",
+            "model_module_version": "1.5.0",
+            "state": {
+              "_model_module": "@jupyter-widgets/controls",
+              "_model_module_version": "1.5.0",
+              "_model_name": "ProgressStyleModel",
+              "_view_count": null,
+              "_view_module": "@jupyter-widgets/base",
+              "_view_module_version": "1.2.0",
+              "_view_name": "StyleView",
+              "bar_color": null,
+              "description_width": ""
+            }
+          },
+          "13a25ae1c7614af08919bc219cc73d02": {
+            "model_module": "@jupyter-widgets/base",
+            "model_name": "LayoutModel",
+            "model_module_version": "1.2.0",
+            "state": {
+              "_model_module": "@jupyter-widgets/base",
+              "_model_module_version": "1.2.0",
+              "_model_name": "LayoutModel",
+              "_view_count": null,
+              "_view_module": "@jupyter-widgets/base",
+              "_view_module_version": "1.2.0",
+              "_view_name": "LayoutView",
+              "align_content": null,
+              "align_items": null,
+              "align_self": null,
+              "border": null,
+              "bottom": null,
+              "display": null,
+              "flex": null,
+              "flex_flow": null,
+              "grid_area": null,
+              "grid_auto_columns": null,
+              "grid_auto_flow": null,
+              "grid_auto_rows": null,
+              "grid_column": null,
+              "grid_gap": null,
+              "grid_row": null,
+              "grid_template_areas": null,
+              "grid_template_columns": null,
+              "grid_template_rows": null,
+              "height": null,
+              "justify_content": null,
+              "justify_items": null,
+              "left": null,
+              "margin": null,
+              "max_height": null,
+              "max_width": null,
+              "min_height": null,
+              "min_width": null,
+              "object_fit": null,
+              "object_position": null,
+              "order": null,
+              "overflow": null,
+              "overflow_x": null,
+              "overflow_y": null,
+              "padding": null,
+              "right": null,
+              "top": null,
+              "visibility": null,
+              "width": null
+            }
+          },
+          "579ac7a066914afba579d3889fb484b7": {
+            "model_module": "@jupyter-widgets/controls",
+            "model_name": "DescriptionStyleModel",
+            "model_module_version": "1.5.0",
+            "state": {
+              "_model_module": "@jupyter-widgets/controls",
+              "_model_module_version": "1.5.0",
+              "_model_name": "DescriptionStyleModel",
+              "_view_count": null,
+              "_view_module": "@jupyter-widgets/base",
+              "_view_module_version": "1.2.0",
+              "_view_name": "StyleView",
+              "description_width": ""
+            }
+          }
+        }
+      }
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/DjAsite/AI-Engineer-Core-Track-LLM-Engineering-RAG-QLoRA-Agents/blob/main/updated\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Models\n",
+        "\n",
+        "Looking at the lower level API of Transformers - the models that wrap PyTorch code for the transformers themselves.\n",
+        "\n",
+        "This notebook can run on a low-cost or free T4 runtime.\n"
+      ],
+      "metadata": {
+        "id": "aKs1PM-O-VQa"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## One more reminder\n",
+        "\n",
+        "**Pro-tip:**\n",
+        "\n",
+        "In the middle of running a Colab, you might get an error like this:\n",
+        "\n",
+        "> Runtime error: CUDA is required but not available for bitsandbytes. Please consider installing [...]\n",
+        "\n",
+        "This is a super-misleading error message! Please don't try changing versions of packages...\n",
+        "\n",
+        "This actually happens because Google has switched out your Colab runtime, perhaps because Google Colab was too busy. The solution is:\n",
+        "\n",
+        "1. Kernel menu >> Disconnect and delete runtime\n",
+        "2. Reload the colab from fresh and Edit menu >> Clear All Outputs\n",
+        "3. Connect to a new T4 using the button at the top right\n",
+        "4. Select \"View resources\" from the menu on the top right to confirm you have a GPU\n",
+        "5. Rerun the cells in the colab, from the top down, starting with the pip installs\n",
+        "\n",
+        "And all should work great - otherwise, ask me!"
+      ],
+      "metadata": {
+        "id": "WTDQBZpH25QB"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "!pip install -U transformers"
+      ],
+      "metadata": {
+        "id": "EhKbQP5iErFV",
+        "outputId": "e436c92d-1454-4147-fceb-3eaf9eb989c4",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Requirement already satisfied: transformers in /usr/local/lib/python3.13/dist-packages (5.16.1)\n",
+            "Requirement already satisfied: huggingface-hub<2.0,>=1.5.0 in /usr/local/lib/python3.13/dist-packages (from transformers) (1.29.0)\n",
+            "Requirement already satisfied: numpy>=1.17 in /usr/local/lib/python3.13/dist-packages (from transformers) (2.1.3)\n",
+            "Requirement already satisfied: packaging>=20.0 in /usr/local/lib/python3.13/dist-packages (from transformers) (26.3)\n",
+            "Requirement already satisfied: pyyaml>=5.1 in /usr/local/lib/python3.13/dist-packages (from transformers) (6.0.3)\n",
+            "Requirement already satisfied: regex>=2025.10.22 in /usr/local/lib/python3.13/dist-packages (from transformers) (2025.11.3)\n",
+            "Requirement already satisfied: tokenizers<0.24.0,>=0.23.1 in /usr/local/lib/python3.13/dist-packages (from transformers) (0.23.1)\n",
+            "Requirement already satisfied: typer in /usr/local/lib/python3.13/dist-packages (from transformers) (0.27.1)\n",
+            "Requirement already satisfied: safetensors>=0.8.0 in /usr/local/lib/python3.13/dist-packages (from transformers) (0.8.0)\n",
+            "Requirement already satisfied: tqdm>=4.60 in /usr/local/lib/python3.13/dist-packages (from transformers) (4.67.3)\n",
+            "Requirement already satisfied: click<9.0.0,>=8.4.2 in /usr/local/lib/python3.13/dist-packages (from huggingface-hub<2.0,>=1.5.0->transformers) (8.4.2)\n",
+            "Requirement already satisfied: filelock>=3.10.0 in /usr/local/lib/python3.13/dist-packages (from huggingface-hub<2.0,>=1.5.0->transformers) (3.32.4)\n",
+            "Requirement already satisfied: fsspec>=2023.5.0 in /usr/local/lib/python3.13/dist-packages (from huggingface-hub<2.0,>=1.5.0->transformers) (2025.3.0)\n",
+            "Requirement already satisfied: hf-xet<2.0.0,>=1.5.2 in /usr/local/lib/python3.13/dist-packages (from huggingface-hub<2.0,>=1.5.0->transformers) (1.6.0)\n",
+            "Requirement already satisfied: httpx<1,>=0.23.0 in /usr/local/lib/python3.13/dist-packages (from huggingface-hub<2.0,>=1.5.0->transformers) (0.28.1)\n",
+            "Requirement already satisfied: typing-extensions>=4.1.0 in /usr/local/lib/python3.13/dist-packages (from huggingface-hub<2.0,>=1.5.0->transformers) (4.16.0)\n",
+            "Requirement already satisfied: shellingham>=1.3.0 in /usr/local/lib/python3.13/dist-packages (from typer->transformers) (1.5.4)\n",
+            "Requirement already satisfied: rich>=13.8.0 in /usr/local/lib/python3.13/dist-packages (from typer->transformers) (13.9.4)\n",
+            "Requirement already satisfied: annotated-doc>=0.0.2 in /usr/local/lib/python3.13/dist-packages (from typer->transformers) (0.0.5)\n",
+            "Requirement already satisfied: anyio in /usr/local/lib/python3.13/dist-packages (from httpx<1,>=0.23.0->huggingface-hub<2.0,>=1.5.0->transformers) (4.14.2)\n",
+            "Requirement already satisfied: certifi in /usr/local/lib/python3.13/dist-packages (from httpx<1,>=0.23.0->huggingface-hub<2.0,>=1.5.0->transformers) (2026.7.22)\n",
+            "Requirement already satisfied: httpcore==1.* in /usr/local/lib/python3.13/dist-packages (from httpx<1,>=0.23.0->huggingface-hub<2.0,>=1.5.0->transformers) (1.0.9)\n",
+            "Requirement already satisfied: idna in /usr/local/lib/python3.13/dist-packages (from httpx<1,>=0.23.0->huggingface-hub<2.0,>=1.5.0->transformers) (3.19)\n",
+            "Requirement already satisfied: h11>=0.16 in /usr/local/lib/python3.13/dist-packages (from httpcore==1.*->httpx<1,>=0.23.0->huggingface-hub<2.0,>=1.5.0->transformers) (0.16.0)\n",
+            "Requirement already satisfied: markdown-it-py>=2.2.0 in /usr/local/lib/python3.13/dist-packages (from rich>=13.8.0->typer->transformers) (4.2.0)\n",
+            "Requirement already satisfied: pygments<3.0.0,>=2.13.0 in /usr/local/lib/python3.13/dist-packages (from rich>=13.8.0->typer->transformers) (2.21.0)\n",
+            "Requirement already satisfied: mdurl~=0.1 in /usr/local/lib/python3.13/dist-packages (from markdown-it-py>=2.2.0->rich>=13.8.0->typer->transformers) (0.1.2)\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from huggingface_hub import login\n",
+        "login()"
+      ],
+      "metadata": {
+        "id": "CsyamcRYEvUH"
+      },
+      "execution_count": 5,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Use a pipeline as a high-level helper\n",
+        "from transformers import pipeline\n",
+        "\n",
+        "pipe = pipeline(\"text-generation\", model=\"meta-llama/Llama-3.2-1B-Instruct\")\n",
+        "messages = [\n",
+        "    {\"role\": \"user\", \"content\": \"Who are you?\"},\n",
+        "]\n",
+        "pipe(messages)"
+      ],
+      "metadata": {
+        "id": "FnXJ6y_9Ey_m",
+        "outputId": "045fff77-6be9-45fd-e9c5-d6c5011d0326",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 156,
+          "referenced_widgets": [
+            "57d0b10ea1234d8aaa9094a7b507d96b",
+            "e00c20ca2f964a74bb173f966ecdd86d",
+            "a81aa5b5cc4a483eb673236f92d4ed28",
+            "5021b967d67846d7a87210ea043e039f",
+            "91fc1a5d136a4e3893f5c33697e666db",
+            "db24bd6b7b554d53a43506f39ee4e9d6",
+            "16b52639e9b34be5b534cd2c96b656c0",
+            "33daf9d8defd47ad8ce73f336d86c9b6",
+            "9ee451b3fc3149ab978337b2a30f9993",
+            "a511bb278e21447fad2994acb9036b25",
+            "0286f7c3230c496b840c77f6d994aec2"
+          ]
+        }
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]"
+            ],
+            "application/vnd.jupyter.widget-view+json": {
+              "version_major": 2,
+              "version_minor": 0,
+              "model_id": "57d0b10ea1234d8aaa9094a7b507d96b"
+            }
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "stream",
+          "name": "stderr",
+          "text": [
+            "[transformers] Both `max_new_tokens` (=256) and `max_length`(=20) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)\n",
+            "[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer TokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.\n"
+          ]
+        },
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[{'generated_text': [{'role': 'user', 'content': 'Who are you?'},\n",
+              "   {'role': 'assistant',\n",
+              "    'content': 'I\\'m an artificial intelligence model known as Llama. Llama stands for \"Large Language Model Meta AI.\"'}]}]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 6
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Load model directly\n",
+        "from transformers import AutoTokenizer, AutoModelForCausalLM\n",
+        "\n",
+        "tokenizer = AutoTokenizer.from_pretrained(\"meta-llama/Llama-3.2-1B-Instruct\")\n",
+        "model = AutoModelForCausalLM.from_pretrained(\"meta-llama/Llama-3.2-1B-Instruct\", device_map=\"auto\")\n",
+        "messages = [\n",
+        "    {\"role\": \"user\", \"content\": \"Who are you?\"},\n",
+        "]\n",
+        "inputs = tokenizer.apply_chat_template(\n",
+        "\tmessages,\n",
+        "\tadd_generation_prompt=True,\n",
+        "\ttokenize=True,\n",
+        "\treturn_dict=True,\n",
+        "\treturn_tensors=\"pt\",\n",
+        ").to(model.device)\n",
+        "\n",
+        "outputs = model.generate(**inputs, max_new_tokens=40)\n",
+        "print(tokenizer.decode(outputs[0][inputs[\"input_ids\"].shape[-1]:]))"
+      ],
+      "metadata": {
+        "id": "bLh6YzHtE2iP",
+        "outputId": "3b92b2d2-0f08-4c29-f00d-c0c873b307ae",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 66,
+          "referenced_widgets": [
+            "f91a0ac5b4a84c00bbe8d4b00dc1974a",
+            "440e72cb38e2454b89c38a4e6a6b1f83",
+            "f744231e76364bff90a9e449adc8bcd0",
+            "5180a74f7f3e47c2a03e1f8eae8333b6",
+            "a71a8c5f546141468a1d5380c1508971",
+            "d3c8c8f994054b0fb59f97a480285323",
+            "6439f9cc036745328a47a2cf54eca686",
+            "027e12650677445181e8878fbe7027e0",
+            "5415e336d2384533b1365014fcd34326",
+            "13a25ae1c7614af08919bc219cc73d02",
+            "579ac7a066914afba579d3889fb484b7"
+          ]
+        }
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]"
+            ],
+            "application/vnd.jupyter.widget-view+json": {
+              "version_major": 2,
+              "version_minor": 0,
+              "model_id": "f91a0ac5b4a84c00bbe8d4b00dc1974a"
+            }
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "I'm an artificial intelligence model known as Llama. Llama stands for \"Large Language Model Meta AI.\"<|eot_id|>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "!pip install -q --upgrade bitsandbytes accelerate transformers==4.57.6"
+      ],
+      "metadata": {
+        "id": "QJ1qpySJTtGy",
+        "outputId": "5659193c-fe58-4c3a-80b3-7ed68c3fa7af",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "\u001b[31mERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.\n",
+            "gradio 6.26.0 requires huggingface-hub<2.0,>=1.16.0, but you have huggingface-hub 0.36.2 which is incompatible.\n",
+            "diffusers 0.40.0 requires huggingface-hub<2.0,>=1.23.0, but you have huggingface-hub 0.36.2 which is incompatible.\u001b[0m\u001b[31m\n",
+            "\u001b[0m"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 9,
+      "metadata": {
+        "id": "C9zvDGWD5pKp"
+      },
+      "outputs": [],
+      "source": [
+        "from google.colab import userdata\n",
+        "from huggingface_hub import login\n",
+        "from transformers import AutoTokenizer, AutoModelForCausalLM, TextStreamer, BitsAndBytesConfig\n",
+        "import torch\n",
+        "import gc"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Sign in to Hugging Face\n",
+        "\n",
+        "1. If you haven't already done so, create a free HuggingFace account at https://huggingface.co and navigate to Settings, then Create a new API token, giving yourself write permissions by clicking on the WRITE tab\n",
+        "\n",
+        "2. Press the \"key\" icon on the side panel to the left, and add a new secret:\n",
+        "`HF_TOKEN = your_token`\n",
+        "\n",
+        "3. Execute the cell below to log in."
+      ],
+      "metadata": {
+        "id": "xyKWKWSw7Iqp"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "hf_token = userdata.get('HF_TOKEN')\n",
+        "login(hf_token, add_to_git_credential=True)"
+      ],
+      "metadata": {
+        "id": "xd7cEDUC6Lkq"
+      },
+      "execution_count": 9,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### Accessing Llama\n",
+        "\n",
+        "Yesterday you should have received approval to use this model:\n",
+        "\n",
+        "https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct\n",
+        "\n",
+        "You can either use that today, or it's faster if you get approval for this model too.\n",
+        "\n",
+        "https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct\n",
+        "\n",
+        "Select this link to see if you need to request approval too. Pick the version of Llama that you want below by commenting out one of these! Or skip Llama altogether."
+      ],
+      "metadata": {
+        "id": "5yQI6rGLkLrK"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# instruct models and 1 reasoning model\n",
+        "\n",
+        "# Llama 3.1 is larger and you should already be approved\n",
+        "# see here: https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct\n",
+        "\n",
+        "# LLAMA = \"meta-llama/Meta-Llama-3.1-8B-Instruct\"\n",
+        "\n",
+        "# Llama 3.2 is smaller but you might need to request access again\n",
+        "# see here: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct\n",
+        "\n",
+        "LLAMA = \"meta-llama/Llama-3.2-1B-Instruct\"\n",
+        "\n",
+        "PHI = \"microsoft/Phi-4-mini-instruct\"\n",
+        "GEMMA = \"google/gemma-3-270m-it\"\n",
+        "QWEN = \"Qwen/Qwen3-4B-Instruct-2507\"\n",
+        "DEEPSEEK = \"deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B\""
+      ],
+      "metadata": {
+        "id": "UtN7OKILQato"
+      },
+      "execution_count": 10,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "messages = [\n",
+        "    {\"role\": \"user\", \"content\": \"Tell a joke for a room of Data Scientists\"}\n",
+        "  ]"
+      ],
+      "metadata": {
+        "id": "KgxCLBJIT5Hx"
+      },
+      "execution_count": 11,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Accessing Llama 3.1 from Meta\n",
+        "\n",
+        "In order to use the fantastic Llama 3.1, Meta does require you to sign their terms of service.\n",
+        "\n",
+        "Visit their model instructions page in Hugging Face:\n",
+        "https://huggingface.co/meta-llama/Meta-Llama-3.1-8B\n",
+        "\n",
+        "At the top of the page are instructions on how to agree to their terms. If possible, you should use the same email as your huggingface account.\n",
+        "\n",
+        "In my experience approval comes in a couple of minutes. Once you've been approved for any 3.1 model, it applies to the whole family of models.\n",
+        "\n",
+        "If you have any problems accessing Llama, please see this colab, including some suggestions if you don't get approved by Meta for any reason.\n",
+        "\n",
+        "https://colab.research.google.com/drive/1deJO03YZTXUwcq2vzxWbiBhrRuI29Vo8"
+      ],
+      "metadata": {
+        "id": "ZSiYqPn87msu"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Quantization Config - this allows us to load the model into memory and use less memory\n",
+        "\n",
+        "quant_config = BitsAndBytesConfig(\n",
+        "    load_in_4bit=True,\n",
+        "    bnb_4bit_use_double_quant=True,\n",
+        "    bnb_4bit_compute_dtype=torch.bfloat16,\n",
+        "    bnb_4bit_quant_type=\"nf4\"\n",
+        ")"
+      ],
+      "metadata": {
+        "id": "hhOgL1p_T6-b"
+      },
+      "execution_count": 12,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "If the next cell gives you a 403 permissions error, then please check:\n",
+        "1. Are you logged in to HuggingFace? Try running `login()` to check your key works\n",
+        "2. Did you set up your API key with full read and write permissions?\n",
+        "3. If you visit the Llama3.1 page at https://huggingface.co/meta-llama/Meta-Llama-3.1-8B, does it show that you have access to the model near the top?\n",
+        "\n",
+        "And work through my Llama troubleshooting colab:\n",
+        "\n",
+        "https://colab.research.google.com/drive/1deJO03YZTXUwcq2vzxWbiBhrRuI29Vo8\n"
+      ],
+      "metadata": {
+        "id": "7MtWZYZG920F"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Tokenizer\n",
+        "\n",
+        "tokenizer = AutoTokenizer.from_pretrained(LLAMA)\n",
+        "tokenizer.pad_token = tokenizer.eos_token\n",
+        "inputs = tokenizer.apply_chat_template(messages, return_tensors=\"pt\").to(\"cuda\")"
+      ],
+      "metadata": {
+        "id": "Zi8YXiwJHF59"
+      },
+      "execution_count": 13,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "inputs"
+      ],
+      "metadata": {
+        "id": "J_HHBEjF8ion",
+        "outputId": "35480f42-0b11-4f27-fac1-dab2222c8237",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "{'input_ids': tensor([[128000, 128006,   9125, 128007,    271,  38766,   1303,  33025,   2696,\n",
+              "             25,   6790,    220,   2366,     18,    198,  15724,   2696,     25,\n",
+              "            220,   1591,   5033,    220,   2366,     21,    271, 128009, 128006,\n",
+              "            882, 128007,    271,  41551,    264,  22380,    369,    264,   3130,\n",
+              "            315,   2956,  57116, 128009]], device='cuda:0'), 'attention_mask': tensor([[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,\n",
+              "         1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]], device='cuda:0')}"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 14
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "pip install transformers bitsandbytes accelerate\n"
+      ],
+      "metadata": {
+        "id": "Pn6Y2niGIV5d",
+        "outputId": "c641245e-df2b-46b3-ac7d-4c3ff599554b",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Requirement already satisfied: transformers in /usr/local/lib/python3.13/dist-packages (4.57.6)\n",
+            "Requirement already satisfied: bitsandbytes in /usr/local/lib/python3.13/dist-packages (0.50.2)\n",
+            "Requirement already satisfied: accelerate in /usr/local/lib/python3.13/dist-packages (1.14.0)\n",
+            "Requirement already satisfied: filelock in /usr/local/lib/python3.13/dist-packages (from transformers) (3.32.4)\n",
+            "Requirement already satisfied: huggingface-hub<1.0,>=0.34.0 in /usr/local/lib/python3.13/dist-packages (from transformers) (0.36.2)\n",
+            "Requirement already satisfied: numpy>=1.17 in /usr/local/lib/python3.13/dist-packages (from transformers) (2.1.3)\n",
+            "Requirement already satisfied: packaging>=20.0 in /usr/local/lib/python3.13/dist-packages (from transformers) (26.3)\n",
+            "Requirement already satisfied: pyyaml>=5.1 in /usr/local/lib/python3.13/dist-packages (from transformers) (6.0.3)\n",
+            "Requirement already satisfied: regex!=2019.12.17 in /usr/local/lib/python3.13/dist-packages (from transformers) (2025.11.3)\n",
+            "Requirement already satisfied: requests in /usr/local/lib/python3.13/dist-packages (from transformers) (2.32.4)\n",
+            "Requirement already satisfied: tokenizers<=0.23.0,>=0.22.0 in /usr/local/lib/python3.13/dist-packages (from transformers) (0.22.2)\n",
+            "Requirement already satisfied: safetensors>=0.4.3 in /usr/local/lib/python3.13/dist-packages (from transformers) (0.8.0)\n",
+            "Requirement already satisfied: tqdm>=4.27 in /usr/local/lib/python3.13/dist-packages (from transformers) (4.67.3)\n",
+            "Requirement already satisfied: torch<3,>=2.4 in /usr/local/lib/python3.13/dist-packages (from bitsandbytes) (2.11.0+cu128)\n",
+            "Requirement already satisfied: psutil in /usr/local/lib/python3.13/dist-packages (from accelerate) (5.9.5)\n",
+            "Requirement already satisfied: fsspec>=2023.5.0 in /usr/local/lib/python3.13/dist-packages (from huggingface-hub<1.0,>=0.34.0->transformers) (2025.3.0)\n",
+            "Requirement already satisfied: hf-xet<2.0.0,>=1.1.3 in /usr/local/lib/python3.13/dist-packages (from huggingface-hub<1.0,>=0.34.0->transformers) (1.6.0)\n",
+            "Requirement already satisfied: typing-extensions>=3.7.4.3 in /usr/local/lib/python3.13/dist-packages (from huggingface-hub<1.0,>=0.34.0->transformers) (4.16.0)\n",
+            "Requirement already satisfied: setuptools<82 in /usr/local/lib/python3.13/dist-packages (from torch<3,>=2.4->bitsandbytes) (75.2.0)\n",
+            "Requirement already satisfied: sympy>=1.13.3 in /usr/local/lib/python3.13/dist-packages (from torch<3,>=2.4->bitsandbytes) (1.14.0)\n",
+            "Requirement already satisfied: networkx>=2.5.1 in /usr/local/lib/python3.13/dist-packages (from torch<3,>=2.4->bitsandbytes) (3.6.1)\n",
+            "Requirement already satisfied: jinja2 in /usr/local/lib/python3.13/dist-packages (from torch<3,>=2.4->bitsandbytes) (3.1.6)\n",
+            "Requirement already satisfied: cuda-toolkit==12.8.1 in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == \"Linux\"->torch<3,>=2.4->bitsandbytes) (12.8.1)\n",
+            "Requirement already satisfied: cuda-bindings<13,>=12.9.4 in /usr/local/lib/python3.13/dist-packages (from torch<3,>=2.4->bitsandbytes) (12.9.7)\n",
+            "Requirement already satisfied: nvidia-cudnn-cu12==9.19.0.56 in /usr/local/lib/python3.13/dist-packages (from torch<3,>=2.4->bitsandbytes) (9.19.0.56)\n",
+            "Requirement already satisfied: nvidia-cusparselt-cu12==0.7.1 in /usr/local/lib/python3.13/dist-packages (from torch<3,>=2.4->bitsandbytes) (0.7.1)\n",
+            "Requirement already satisfied: nvidia-nccl-cu12==2.28.9 in /usr/local/lib/python3.13/dist-packages (from torch<3,>=2.4->bitsandbytes) (2.28.9)\n",
+            "Requirement already satisfied: nvidia-nvshmem-cu12==3.4.5 in /usr/local/lib/python3.13/dist-packages (from torch<3,>=2.4->bitsandbytes) (3.4.5)\n",
+            "Requirement already satisfied: triton==3.6.0 in /usr/local/lib/python3.13/dist-packages (from torch<3,>=2.4->bitsandbytes) (3.6.0)\n",
+            "Requirement already satisfied: nvidia-cublas-cu12==12.8.4.1.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == \"Linux\"->torch<3,>=2.4->bitsandbytes) (12.8.4.1)\n",
+            "Requirement already satisfied: nvidia-cuda-runtime-cu12==12.8.90.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == \"Linux\"->torch<3,>=2.4->bitsandbytes) (12.8.90)\n",
+            "Requirement already satisfied: nvidia-cufft-cu12==11.3.3.83.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == \"Linux\"->torch<3,>=2.4->bitsandbytes) (11.3.3.83)\n",
+            "Requirement already satisfied: nvidia-cufile-cu12==1.13.1.3.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == \"Linux\"->torch<3,>=2.4->bitsandbytes) (1.13.1.3)\n",
+            "Requirement already satisfied: nvidia-cuda-cupti-cu12==12.8.90.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == \"Linux\"->torch<3,>=2.4->bitsandbytes) (12.8.90)\n",
+            "Requirement already satisfied: nvidia-curand-cu12==10.3.9.90.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == \"Linux\"->torch<3,>=2.4->bitsandbytes) (10.3.9.90)\n",
+            "Requirement already satisfied: nvidia-cusolver-cu12==11.7.3.90.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == \"Linux\"->torch<3,>=2.4->bitsandbytes) (11.7.3.90)\n",
+            "Requirement already satisfied: nvidia-cusparse-cu12==12.5.8.93.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == \"Linux\"->torch<3,>=2.4->bitsandbytes) (12.5.8.93)\n",
+            "Requirement already satisfied: nvidia-nvjitlink-cu12==12.8.93.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == \"Linux\"->torch<3,>=2.4->bitsandbytes) (12.8.93)\n",
+            "Requirement already satisfied: nvidia-cuda-nvrtc-cu12==12.8.93.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == \"Linux\"->torch<3,>=2.4->bitsandbytes) (12.8.93)\n",
+            "Requirement already satisfied: nvidia-nvtx-cu12==12.8.90.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == \"Linux\"->torch<3,>=2.4->bitsandbytes) (12.8.90)\n",
+            "Requirement already satisfied: charset_normalizer<4,>=2 in /usr/local/lib/python3.13/dist-packages (from requests->transformers) (3.4.9)\n",
+            "Requirement already satisfied: idna<4,>=2.5 in /usr/local/lib/python3.13/dist-packages (from requests->transformers) (3.19)\n",
+            "Requirement already satisfied: urllib3<3,>=1.21.1 in /usr/local/lib/python3.13/dist-packages (from requests->transformers) (2.5.0)\n",
+            "Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.13/dist-packages (from requests->transformers) (2026.7.22)\n",
+            "Requirement already satisfied: cuda-pathfinder~=1.1 in /usr/local/lib/python3.13/dist-packages (from cuda-bindings<13,>=12.9.4->torch<3,>=2.4->bitsandbytes) (1.7.0)\n",
+            "Requirement already satisfied: mpmath<1.4,>=1.1.0 in /usr/local/lib/python3.13/dist-packages (from sympy>=1.13.3->torch<3,>=2.4->bitsandbytes) (1.3.0)\n",
+            "Requirement already satisfied: MarkupSafe>=2.0 in /usr/local/lib/python3.13/dist-packages (from jinja2->torch<3,>=2.4->bitsandbytes) (3.0.3)\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "!pip install transformers==3.4.0"
+      ],
+      "metadata": {
+        "id": "74xciQQBIst1",
+        "outputId": "a2bf63cb-c38e-4f6c-a787-762b8315e49b",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Collecting transformers==3.4.0\n",
+            "  Using cached transformers-3.4.0-py3-none-any.whl.metadata (31 kB)\n",
+            "Requirement already satisfied: numpy in /usr/local/lib/python3.13/dist-packages (from transformers==3.4.0) (2.1.3)\n",
+            "Collecting tokenizers==0.9.2 (from transformers==3.4.0)\n",
+            "  Using cached tokenizers-0.9.2.tar.gz (170 kB)\n",
+            "  Installing build dependencies ... \u001b[?25l\u001b[?25hdone\n",
+            "  Getting requirements to build wheel ... \u001b[?25l\u001b[?25hdone\n",
+            "  Preparing metadata (pyproject.toml) ... \u001b[?25l\u001b[?25hdone\n",
+            "Requirement already satisfied: packaging in /usr/local/lib/python3.13/dist-packages (from transformers==3.4.0) (26.3)\n",
+            "Requirement already satisfied: filelock in /usr/local/lib/python3.13/dist-packages (from transformers==3.4.0) (3.32.4)\n",
+            "Requirement already satisfied: requests in /usr/local/lib/python3.13/dist-packages (from transformers==3.4.0) (2.32.4)\n",
+            "Requirement already satisfied: tqdm>=4.27 in /usr/local/lib/python3.13/dist-packages (from transformers==3.4.0) (4.67.3)\n",
+            "Requirement already satisfied: regex!=2019.12.17 in /usr/local/lib/python3.13/dist-packages (from transformers==3.4.0) (2025.11.3)\n",
+            "Requirement already satisfied: sentencepiece!=0.1.92 in /usr/local/lib/python3.13/dist-packages (from transformers==3.4.0) (0.2.2)\n",
+            "Requirement already satisfied: protobuf in /usr/local/lib/python3.13/dist-packages (from transformers==3.4.0) (5.29.6)\n",
+            "Collecting sacremoses (from transformers==3.4.0)\n",
+            "  Using cached sacremoses-0.2.0-py3-none-any.whl.metadata (8.8 kB)\n",
+            "Requirement already satisfied: charset_normalizer<4,>=2 in /usr/local/lib/python3.13/dist-packages (from requests->transformers==3.4.0) (3.4.9)\n",
+            "Requirement already satisfied: idna<4,>=2.5 in /usr/local/lib/python3.13/dist-packages (from requests->transformers==3.4.0) (3.19)\n",
+            "Requirement already satisfied: urllib3<3,>=1.21.1 in /usr/local/lib/python3.13/dist-packages (from requests->transformers==3.4.0) (2.5.0)\n",
+            "Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.13/dist-packages (from requests->transformers==3.4.0) (2026.7.22)\n",
+            "Requirement already satisfied: click>=8.0 in /usr/local/lib/python3.13/dist-packages (from sacremoses->transformers==3.4.0) (8.4.2)\n",
+            "Requirement already satisfied: joblib>=1.2.0 in /usr/local/lib/python3.13/dist-packages (from sacremoses->transformers==3.4.0) (1.5.3)\n",
+            "Using cached transformers-3.4.0-py3-none-any.whl (1.3 MB)\n",
+            "Using cached sacremoses-0.2.0-py3-none-any.whl (867 kB)\n",
+            "Building wheels for collected packages: tokenizers\n",
+            "  \u001b[1;31merror\u001b[0m: \u001b[1msubprocess-exited-with-error\u001b[0m\n",
+            "  \n",
+            "  \u001b[31m×\u001b[0m \u001b[32mBuilding wheel for tokenizers \u001b[0m\u001b[1;32m(\u001b[0m\u001b[32mpyproject.toml\u001b[0m\u001b[1;32m)\u001b[0m did not run successfully.\n",
+            "  \u001b[31m│\u001b[0m exit code: \u001b[1;36m1\u001b[0m\n",
+            "  \u001b[31m╰─>\u001b[0m See above for output.\n",
+            "  \n",
+            "  \u001b[1;35mnote\u001b[0m: This error originates from a subprocess, and is likely not a problem with pip.\n",
+            "  Building wheel for tokenizers (pyproject.toml) ... \u001b[?25l\u001b[?25herror\n",
+            "\u001b[31m  ERROR: Failed building wheel for tokenizers\u001b[0m\u001b[31m\n",
+            "\u001b[0mFailed to build tokenizers\n",
+            "\u001b[31mERROR: ERROR: Failed to build installable wheels for some pyproject.toml based projects (tokenizers)\u001b[0m\u001b[31m\n",
+            "\u001b[0m"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "!pip install --upgrade transformers accelerate bitsandbytes"
+      ],
+      "metadata": {
+        "id": "pU5kfeFhIF8w",
+        "outputId": "aa379647-6f9f-43b5-c5ae-fe37cca0a4d2",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 1000
+        }
+      },
+      "execution_count": 17,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Requirement already satisfied: transformers in /usr/local/lib/python3.13/dist-packages (4.57.6)\n",
+            "Collecting transformers\n",
+            "  Using cached transformers-5.16.1-py3-none-any.whl.metadata (32 kB)\n",
+            "Requirement already satisfied: accelerate in /usr/local/lib/python3.13/dist-packages (1.14.0)\n",
+            "Requirement already satisfied: bitsandbytes in /usr/local/lib/python3.13/dist-packages (0.50.2)\n",
+            "Collecting huggingface-hub<2.0,>=1.5.0 (from transformers)\n",
+            "  Using cached huggingface_hub-1.29.0-py3-none-any.whl.metadata (16 kB)\n",
+            "Requirement already satisfied: numpy>=1.17 in /usr/local/lib/python3.13/dist-packages (from transformers) (2.1.3)\n",
+            "Requirement already satisfied: packaging>=20.0 in /usr/local/lib/python3.13/dist-packages (from transformers) (26.3)\n",
+            "Requirement already satisfied: pyyaml>=5.1 in /usr/local/lib/python3.13/dist-packages (from transformers) (6.0.3)\n",
+            "Requirement already satisfied: regex>=2025.10.22 in /usr/local/lib/python3.13/dist-packages (from transformers) (2025.11.3)\n",
+            "Collecting tokenizers<0.24.0,>=0.23.1 (from transformers)\n",
+            "  Using cached tokenizers-0.23.1-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (9.8 kB)\n",
+            "Requirement already satisfied: typer in /usr/local/lib/python3.13/dist-packages (from transformers) (0.27.1)\n",
+            "Requirement already satisfied: safetensors>=0.8.0 in /usr/local/lib/python3.13/dist-packages (from transformers) (0.8.0)\n",
+            "Requirement already satisfied: tqdm>=4.60 in /usr/local/lib/python3.13/dist-packages (from transformers) (4.67.3)\n",
+            "Requirement already satisfied: psutil in /usr/local/lib/python3.13/dist-packages (from accelerate) (5.9.5)\n",
+            "Requirement already satisfied: torch>=2.0.0 in /usr/local/lib/python3.13/dist-packages (from accelerate) (2.11.0+cu128)\n",
+            "Requirement already satisfied: click<9.0.0,>=8.4.2 in /usr/local/lib/python3.13/dist-packages (from huggingface-hub<2.0,>=1.5.0->transformers) (8.4.2)\n",
+            "Requirement already satisfied: filelock>=3.10.0 in /usr/local/lib/python3.13/dist-packages (from huggingface-hub<2.0,>=1.5.0->transformers) (3.32.4)\n",
+            "Requirement already satisfied: fsspec>=2023.5.0 in /usr/local/lib/python3.13/dist-packages (from huggingface-hub<2.0,>=1.5.0->transformers) (2025.3.0)\n",
+            "Requirement already satisfied: hf-xet<2.0.0,>=1.5.2 in /usr/local/lib/python3.13/dist-packages (from huggingface-hub<2.0,>=1.5.0->transformers) (1.6.0)\n",
+            "Requirement already satisfied: httpx<1,>=0.23.0 in /usr/local/lib/python3.13/dist-packages (from huggingface-hub<2.0,>=1.5.0->transformers) (0.28.1)\n",
+            "Requirement already satisfied: typing-extensions>=4.1.0 in /usr/local/lib/python3.13/dist-packages (from huggingface-hub<2.0,>=1.5.0->transformers) (4.16.0)\n",
+            "Requirement already satisfied: setuptools<82 in /usr/local/lib/python3.13/dist-packages (from torch>=2.0.0->accelerate) (75.2.0)\n",
+            "Requirement already satisfied: sympy>=1.13.3 in /usr/local/lib/python3.13/dist-packages (from torch>=2.0.0->accelerate) (1.14.0)\n",
+            "Requirement already satisfied: networkx>=2.5.1 in /usr/local/lib/python3.13/dist-packages (from torch>=2.0.0->accelerate) (3.6.1)\n",
+            "Requirement already satisfied: jinja2 in /usr/local/lib/python3.13/dist-packages (from torch>=2.0.0->accelerate) (3.1.6)\n",
+            "Requirement already satisfied: cuda-toolkit==12.8.1 in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == \"Linux\"->torch>=2.0.0->accelerate) (12.8.1)\n",
+            "Requirement already satisfied: cuda-bindings<13,>=12.9.4 in /usr/local/lib/python3.13/dist-packages (from torch>=2.0.0->accelerate) (12.9.7)\n",
+            "Requirement already satisfied: nvidia-cudnn-cu12==9.19.0.56 in /usr/local/lib/python3.13/dist-packages (from torch>=2.0.0->accelerate) (9.19.0.56)\n",
+            "Requirement already satisfied: nvidia-cusparselt-cu12==0.7.1 in /usr/local/lib/python3.13/dist-packages (from torch>=2.0.0->accelerate) (0.7.1)\n",
+            "Requirement already satisfied: nvidia-nccl-cu12==2.28.9 in /usr/local/lib/python3.13/dist-packages (from torch>=2.0.0->accelerate) (2.28.9)\n",
+            "Requirement already satisfied: nvidia-nvshmem-cu12==3.4.5 in /usr/local/lib/python3.13/dist-packages (from torch>=2.0.0->accelerate) (3.4.5)\n",
+            "Requirement already satisfied: triton==3.6.0 in /usr/local/lib/python3.13/dist-packages (from torch>=2.0.0->accelerate) (3.6.0)\n",
+            "Requirement already satisfied: nvidia-cublas-cu12==12.8.4.1.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == \"Linux\"->torch>=2.0.0->accelerate) (12.8.4.1)\n",
+            "Requirement already satisfied: nvidia-cuda-runtime-cu12==12.8.90.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == \"Linux\"->torch>=2.0.0->accelerate) (12.8.90)\n",
+            "Requirement already satisfied: nvidia-cufft-cu12==11.3.3.83.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == \"Linux\"->torch>=2.0.0->accelerate) (11.3.3.83)\n",
+            "Requirement already satisfied: nvidia-cufile-cu12==1.13.1.3.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == \"Linux\"->torch>=2.0.0->accelerate) (1.13.1.3)\n",
+            "Requirement already satisfied: nvidia-cuda-cupti-cu12==12.8.90.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == \"Linux\"->torch>=2.0.0->accelerate) (12.8.90)\n",
+            "Requirement already satisfied: nvidia-curand-cu12==10.3.9.90.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == \"Linux\"->torch>=2.0.0->accelerate) (10.3.9.90)\n",
+            "Requirement already satisfied: nvidia-cusolver-cu12==11.7.3.90.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == \"Linux\"->torch>=2.0.0->accelerate) (11.7.3.90)\n",
+            "Requirement already satisfied: nvidia-cusparse-cu12==12.5.8.93.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == \"Linux\"->torch>=2.0.0->accelerate) (12.5.8.93)\n",
+            "Requirement already satisfied: nvidia-nvjitlink-cu12==12.8.93.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == \"Linux\"->torch>=2.0.0->accelerate) (12.8.93)\n",
+            "Requirement already satisfied: nvidia-cuda-nvrtc-cu12==12.8.93.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == \"Linux\"->torch>=2.0.0->accelerate) (12.8.93)\n",
+            "Requirement already satisfied: nvidia-nvtx-cu12==12.8.90.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == \"Linux\"->torch>=2.0.0->accelerate) (12.8.90)\n",
+            "Requirement already satisfied: shellingham>=1.3.0 in /usr/local/lib/python3.13/dist-packages (from typer->transformers) (1.5.4)\n",
+            "Requirement already satisfied: rich>=13.8.0 in /usr/local/lib/python3.13/dist-packages (from typer->transformers) (13.9.4)\n",
+            "Requirement already satisfied: annotated-doc>=0.0.2 in /usr/local/lib/python3.13/dist-packages (from typer->transformers) (0.0.5)\n",
+            "Requirement already satisfied: cuda-pathfinder~=1.1 in /usr/local/lib/python3.13/dist-packages (from cuda-bindings<13,>=12.9.4->torch>=2.0.0->accelerate) (1.7.0)\n",
+            "Requirement already satisfied: anyio in /usr/local/lib/python3.13/dist-packages (from httpx<1,>=0.23.0->huggingface-hub<2.0,>=1.5.0->transformers) (4.14.2)\n",
+            "Requirement already satisfied: certifi in /usr/local/lib/python3.13/dist-packages (from httpx<1,>=0.23.0->huggingface-hub<2.0,>=1.5.0->transformers) (2026.7.22)\n",
+            "Requirement already satisfied: httpcore==1.* in /usr/local/lib/python3.13/dist-packages (from httpx<1,>=0.23.0->huggingface-hub<2.0,>=1.5.0->transformers) (1.0.9)\n",
+            "Requirement already satisfied: idna in /usr/local/lib/python3.13/dist-packages (from httpx<1,>=0.23.0->huggingface-hub<2.0,>=1.5.0->transformers) (3.19)\n",
+            "Requirement already satisfied: h11>=0.16 in /usr/local/lib/python3.13/dist-packages (from httpcore==1.*->httpx<1,>=0.23.0->huggingface-hub<2.0,>=1.5.0->transformers) (0.16.0)\n",
+            "Requirement already satisfied: markdown-it-py>=2.2.0 in /usr/local/lib/python3.13/dist-packages (from rich>=13.8.0->typer->transformers) (4.2.0)\n",
+            "Requirement already satisfied: pygments<3.0.0,>=2.13.0 in /usr/local/lib/python3.13/dist-packages (from rich>=13.8.0->typer->transformers) (2.21.0)\n",
+            "Requirement already satisfied: mpmath<1.4,>=1.1.0 in /usr/local/lib/python3.13/dist-packages (from sympy>=1.13.3->torch>=2.0.0->accelerate) (1.3.0)\n",
+            "Requirement already satisfied: MarkupSafe>=2.0 in /usr/local/lib/python3.13/dist-packages (from jinja2->torch>=2.0.0->accelerate) (3.0.3)\n",
+            "Requirement already satisfied: mdurl~=0.1 in /usr/local/lib/python3.13/dist-packages (from markdown-it-py>=2.2.0->rich>=13.8.0->typer->transformers) (0.1.2)\n",
+            "Using cached transformers-5.16.1-py3-none-any.whl (12.1 MB)\n",
+            "Using cached huggingface_hub-1.29.0-py3-none-any.whl (795 kB)\n",
+            "Using cached tokenizers-0.23.1-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.3 MB)\n",
+            "Installing collected packages: huggingface-hub, tokenizers, transformers\n",
+            "  Attempting uninstall: huggingface-hub\n",
+            "    Found existing installation: huggingface_hub 0.36.2\n",
+            "    Uninstalling huggingface_hub-0.36.2:\n",
+            "      Successfully uninstalled huggingface_hub-0.36.2\n",
+            "  Attempting uninstall: tokenizers\n",
+            "    Found existing installation: tokenizers 0.22.2\n",
+            "    Uninstalling tokenizers-0.22.2:\n",
+            "      Successfully uninstalled tokenizers-0.22.2\n",
+            "  Attempting uninstall: transformers\n",
+            "    Found existing installation: transformers 4.57.6\n",
+            "    Uninstalling transformers-4.57.6:\n",
+            "      Successfully uninstalled transformers-4.57.6\n",
+            "Successfully installed huggingface-hub-1.29.0 tokenizers-0.23.1 transformers-5.16.1\n"
+          ]
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "application/vnd.colab-display-data+json": {
+              "pip_warning": {
+                "packages": [
+                  "tokenizers",
+                  "transformers"
+                ]
+              },
+              "id": "13072b43aa694adca73ae1091007e1b4"
+            }
+          },
+          "metadata": {}
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# The model\n",
+        "\n",
+        "model = AutoModelForCausalLM.from_pretrained(LLAMA, device_map=\"auto\", quantization_config=quant_config)"
+      ],
+      "metadata": {
+        "id": "S5jly421tno3",
+        "outputId": "be52ac08-3bc3-45ef-bb62-f51a59d4ed26",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 321
+        }
+      },
+      "execution_count": 18,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "KeyboardInterrupt",
+          "evalue": "",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mKeyboardInterrupt\u001b[0m                         Traceback (most recent call last)",
+            "\u001b[0;32m/tmp/ipykernel_13300/2786243165.py\u001b[0m in \u001b[0;36m<cell line: 0>\u001b[0;34m()\u001b[0m\n\u001b[1;32m      1\u001b[0m \u001b[0;31m# The model\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      2\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 3\u001b[0;31m \u001b[0mmodel\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mAutoModelForCausalLM\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mfrom_pretrained\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mLLAMA\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mdevice_map\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;34m\"auto\"\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mquantization_config\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mquant_config\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+            "\u001b[0;32m/usr/local/lib/python3.13/dist-packages/transformers/models/auto/auto_factory.py\u001b[0m in \u001b[0;36mfrom_pretrained\u001b[0;34m(cls, pretrained_model_name_or_path, *model_args, **kwargs)\u001b[0m\n\u001b[1;32m    400\u001b[0m                 \u001b[0;32mif\u001b[0m \u001b[0mparent_quant\u001b[0m \u001b[0;32mis\u001b[0m \u001b[0;32mnot\u001b[0m \u001b[0;32mNone\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    401\u001b[0m                     \u001b[0mconfig\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mquantization_config\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mparent_quant\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 402\u001b[0;31m             return model_class.from_pretrained(\n\u001b[0m\u001b[1;32m    403\u001b[0m                 \u001b[0mpretrained_model_name_or_path\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m*\u001b[0m\u001b[0mmodel_args\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mconfig\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mconfig\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m**\u001b[0m\u001b[0mhub_kwargs\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m**\u001b[0m\u001b[0mkwargs\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    404\u001b[0m             )\n",
+            "\u001b[0;32m/usr/local/lib/python3.13/dist-packages/transformers/modeling_utils.py\u001b[0m in \u001b[0;36mfrom_pretrained\u001b[0;34m(cls, pretrained_model_name_or_path, config, cache_dir, ignore_mismatched_sizes, force_download, local_files_only, token, revision, use_safetensors, weights_only, fusion_config, disable_mmap, *model_args, **kwargs)\u001b[0m\n\u001b[1;32m   4268\u001b[0m             \u001b[0mconfig\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_experts_implementation\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mkwargs\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mpop\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"experts_implementation\"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   4269\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m-> 4270\u001b[0;31m         hf_quantizer, config, device_map = get_hf_quantizer(\n\u001b[0m\u001b[1;32m   4271\u001b[0m             \u001b[0mconfig\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mquantization_config\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mdevice_map\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mweights_only\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0muser_agent\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   4272\u001b[0m         )\n",
+            "\u001b[0;32m/usr/local/lib/python3.13/dist-packages/transformers/quantizers/auto.py\u001b[0m in \u001b[0;36mget_hf_quantizer\u001b[0;34m(config, quantization_config, device_map, weights_only, user_agent)\u001b[0m\n\u001b[1;32m    356\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    357\u001b[0m     \u001b[0;32mif\u001b[0m \u001b[0mhf_quantizer\u001b[0m \u001b[0;32mis\u001b[0m \u001b[0;32mnot\u001b[0m \u001b[0;32mNone\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 358\u001b[0;31m         hf_quantizer.validate_environment(\n\u001b[0m\u001b[1;32m    359\u001b[0m             \u001b[0mdevice_map\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mdevice_map\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    360\u001b[0m             \u001b[0mweights_only\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mweights_only\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.13/dist-packages/transformers/quantizers/quantizer_bnb_4bit.py\u001b[0m in \u001b[0;36mvalidate_environment\u001b[0;34m(self, *args, **kwargs)\u001b[0m\n\u001b[1;32m     64\u001b[0m             )\n\u001b[1;32m     65\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 66\u001b[0;31m         \u001b[0;32mfrom\u001b[0m \u001b[0;34m.\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mintegrations\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0mvalidate_bnb_backend_availability\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m     67\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     68\u001b[0m         \u001b[0mvalidate_bnb_backend_availability\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mraise_exception\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;32mTrue\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/lib/python3.13/importlib/_bootstrap.py\u001b[0m in \u001b[0;36m_handle_fromlist\u001b[0;34m(module, fromlist, import_, recursive)\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.13/dist-packages/transformers/utils/import_utils.py\u001b[0m in \u001b[0;36m__getattr__\u001b[0;34m(self, name)\u001b[0m\n\u001b[1;32m   2529\u001b[0m         \u001b[0;32melif\u001b[0m \u001b[0mname\u001b[0m \u001b[0;32min\u001b[0m \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_class_to_module\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   2530\u001b[0m             \u001b[0;32mtry\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m-> 2531\u001b[0;31m                 \u001b[0mmodule\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_get_module\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_class_to_module\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0mname\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m   2532\u001b[0m                 \u001b[0mvalue\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mgetattr\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mmodule\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mname\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   2533\u001b[0m             \u001b[0;32mexcept\u001b[0m \u001b[0;34m(\u001b[0m\u001b[0mModuleNotFoundError\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mRuntimeError\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mAttributeError\u001b[0m\u001b[0;34m)\u001b[0m \u001b[0;32mas\u001b[0m \u001b[0me\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.13/dist-packages/transformers/utils/import_utils.py\u001b[0m in \u001b[0;36m_get_module\u001b[0;34m(self, module_name)\u001b[0m\n\u001b[1;32m   2761\u001b[0m     \u001b[0;32mdef\u001b[0m \u001b[0m_get_module\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mself\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mmodule_name\u001b[0m\u001b[0;34m:\u001b[0m \u001b[0mstr\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   2762\u001b[0m         \u001b[0;32mtry\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m-> 2763\u001b[0;31m             \u001b[0;32mreturn\u001b[0m \u001b[0mimportlib\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mimport_module\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\".\"\u001b[0m \u001b[0;34m+\u001b[0m \u001b[0mmodule_name\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m__name__\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m   2764\u001b[0m         \u001b[0;32mexcept\u001b[0m \u001b[0mException\u001b[0m \u001b[0;32mas\u001b[0m \u001b[0me\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   2765\u001b[0m             \u001b[0;32mraise\u001b[0m \u001b[0me\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/lib/python3.13/importlib/__init__.py\u001b[0m in \u001b[0;36mimport_module\u001b[0;34m(name, package)\u001b[0m\n\u001b[1;32m     86\u001b[0m                 \u001b[0;32mbreak\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     87\u001b[0m             \u001b[0mlevel\u001b[0m \u001b[0;34m+=\u001b[0m \u001b[0;36m1\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 88\u001b[0;31m     \u001b[0;32mreturn\u001b[0m \u001b[0m_bootstrap\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_gcd_import\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mname\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0mlevel\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mpackage\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mlevel\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m     89\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     90\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.13/dist-packages/transformers/integrations/bitsandbytes.py\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[1;32m     13\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     14\u001b[0m \u001b[0;32mif\u001b[0m \u001b[0mis_bitsandbytes_available\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 15\u001b[0;31m     \u001b[0;32mimport\u001b[0m \u001b[0mbitsandbytes\u001b[0m \u001b[0;32mas\u001b[0m \u001b[0mbnb\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m     16\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     17\u001b[0m \u001b[0;32mif\u001b[0m \u001b[0mis_torch_available\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.13/dist-packages/bitsandbytes/__init__.py\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[1;32m     17\u001b[0m )\n\u001b[1;32m     18\u001b[0m \u001b[0;32mfrom\u001b[0m \u001b[0;34m.\u001b[0m\u001b[0mbackends\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mcpu\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0mops\u001b[0m \u001b[0;32mas\u001b[0m \u001b[0mcpu_ops\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 19\u001b[0;31m \u001b[0;32mfrom\u001b[0m \u001b[0;34m.\u001b[0m\u001b[0mbackends\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mdefault\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0mops\u001b[0m \u001b[0;32mas\u001b[0m \u001b[0mdefault_ops\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m     20\u001b[0m \u001b[0;32mfrom\u001b[0m \u001b[0;34m.\u001b[0m\u001b[0mnn\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0mmodules\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     21\u001b[0m \u001b[0;32mfrom\u001b[0m \u001b[0;34m.\u001b[0m\u001b[0moptim\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0madam\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.13/dist-packages/bitsandbytes/backends/default/ops.py\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[1;32m    197\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    198\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 199\u001b[0;31m \u001b[0;34m@\u001b[0m\u001b[0m_try_torch_compile\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mdynamic\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;32mFalse\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    200\u001b[0m def _dequantize_blockwise_compute(\n\u001b[1;32m    201\u001b[0m     \u001b[0mA_flat\u001b[0m\u001b[0;34m:\u001b[0m \u001b[0mtorch\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mTensor\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mabsmax\u001b[0m\u001b[0;34m:\u001b[0m \u001b[0mtorch\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mTensor\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mcode\u001b[0m\u001b[0;34m:\u001b[0m \u001b[0mtorch\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mTensor\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mblocksize\u001b[0m\u001b[0;34m:\u001b[0m \u001b[0mint\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mdtype\u001b[0m\u001b[0;34m:\u001b[0m \u001b[0mtorch\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mdtype\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.13/dist-packages/bitsandbytes/backends/default/ops.py\u001b[0m in \u001b[0;36mdecorator\u001b[0;34m(fn)\u001b[0m\n\u001b[1;32m     17\u001b[0m     \u001b[0;32mdef\u001b[0m \u001b[0mdecorator\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mfn\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     18\u001b[0m         \u001b[0;32mtry\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 19\u001b[0;31m             \u001b[0mcompiled_fn\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mtorch\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mcompile\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mfn\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m**\u001b[0m\u001b[0mcompile_kwargs\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m     20\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     21\u001b[0m             \u001b[0;34m@\u001b[0m\u001b[0mwraps\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mfn\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.13/dist-packages/torch/__init__.py\u001b[0m in \u001b[0;36mcompile\u001b[0;34m(model, fullgraph, dynamic, backend, mode, options, disable)\u001b[0m\n\u001b[1;32m   2756\u001b[0m         \u001b[0mbackend\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0m_TorchCompileWrapper\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mbackend\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mmode\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0moptions\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mdynamic\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   2757\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m-> 2758\u001b[0;31m     return torch._dynamo.optimize(\n\u001b[0m\u001b[1;32m   2759\u001b[0m         \u001b[0mbackend\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mbackend\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   2760\u001b[0m         \u001b[0mnopython\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mfullgraph\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.13/dist-packages/torch/_dynamo/eval_frame.py\u001b[0m in \u001b[0;36moptimize\u001b[0;34m(*args, **kwargs)\u001b[0m\n\u001b[1;32m   1486\u001b[0m         \u001b[0;32mreturn\u001b[0m \u001b[0moptimize\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m*\u001b[0m\u001b[0margs\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m**\u001b[0m\u001b[0mkwargs\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   1487\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m-> 1488\u001b[0;31m     \u001b[0;32mreturn\u001b[0m \u001b[0m_optimize\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mrebuild_ctx\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m*\u001b[0m\u001b[0margs\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m**\u001b[0m\u001b[0mkwargs\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m   1489\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   1490\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.13/dist-packages/torch/_dynamo/eval_frame.py\u001b[0m in \u001b[0;36m_optimize\u001b[0;34m(rebuild_ctx, backend, nopython, error_on_graph_break, guard_export_fn, guard_fail_fn, guard_filter_fn, disable, dynamic, package)\u001b[0m\n\u001b[1;32m   1562\u001b[0m         )\n\u001b[1;32m   1563\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m-> 1564\u001b[0;31m     \u001b[0mbackend\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mget_compiler_fn\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mbackend\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m   1565\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   1566\u001b[0m     \u001b[0;31m# Find if backend has any extra context manager\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.13/dist-packages/torch/_dynamo/eval_frame.py\u001b[0m in \u001b[0;36mget_compiler_fn\u001b[0;34m(compiler_fn)\u001b[0m\n\u001b[1;32m   1323\u001b[0m     \u001b[0mcompiler_fn\u001b[0m\u001b[0;34m:\u001b[0m \u001b[0mUnion\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0mstr\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mCallable\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;34m...\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mAny\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;32mNone\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   1324\u001b[0m ) -> WrapBackendDebug:\n\u001b[0;32m-> 1325\u001b[0;31m     \u001b[0;32mfrom\u001b[0m \u001b[0;34m.\u001b[0m\u001b[0mrepro\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mafter_dynamo\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0mwrap_backend_debug\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m   1326\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   1327\u001b[0m     \u001b[0;32mif\u001b[0m \u001b[0mcompiler_fn\u001b[0m \u001b[0;32mis\u001b[0m \u001b[0;32mNone\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.13/dist-packages/torch/_dynamo/repro/after_dynamo.py\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[1;32m     31\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0mtorch\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     32\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0mtorch\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mfx\u001b[0m \u001b[0;32mas\u001b[0m \u001b[0mfx\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 33\u001b[0;31m from torch._dynamo.debug_utils import (\n\u001b[0m\u001b[1;32m     34\u001b[0m     \u001b[0mAccuracyError\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     35\u001b[0m     \u001b[0mbackend_accuracy_fails\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.13/dist-packages/torch/_dynamo/debug_utils.py\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[1;32m     41\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0mtorch\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_subclasses\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mmeta_utils\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     42\u001b[0m \u001b[0;32mfrom\u001b[0m \u001b[0mtorch\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0mTensor\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 43\u001b[0;31m \u001b[0;32mfrom\u001b[0m \u001b[0mtorch\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_dynamo\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mtesting\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0mrand_strided\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m     44\u001b[0m \u001b[0;32mfrom\u001b[0m \u001b[0mtorch\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_inductor\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mcpp_builder\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0mnormalize_path_separator\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     45\u001b[0m \u001b[0;32mfrom\u001b[0m \u001b[0mtorch\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_prims_common\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0mis_float_dtype\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.13/dist-packages/torch/_dynamo/testing.py\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[1;32m     31\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0mtorch\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     32\u001b[0m \u001b[0;32mfrom\u001b[0m \u001b[0mtorch\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0mfx\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 33\u001b[0;31m \u001b[0;32mfrom\u001b[0m \u001b[0mtorch\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_dynamo\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mbackends\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mdebugging\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0maot_eager\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m     34\u001b[0m \u001b[0;32mfrom\u001b[0m \u001b[0mtorch\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_dynamo\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0moutput_graph\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0mOutputGraph\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     35\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.13/dist-packages/torch/_dynamo/backends/debugging.py\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[1;32m     32\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     33\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0mtorch\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 34\u001b[0;31m \u001b[0;32mfrom\u001b[0m \u001b[0mfunctorch\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mcompile\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0mmin_cut_rematerialization_partition\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m     35\u001b[0m \u001b[0;32mfrom\u001b[0m \u001b[0mtorch\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0m_guards\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     36\u001b[0m \u001b[0;32mfrom\u001b[0m \u001b[0mtorch\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_dynamo\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0moutput_graph\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0mGraphCompileReason\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.13/dist-packages/functorch/compile/__init__.py\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[1;32m      1\u001b[0m \u001b[0;32mfrom\u001b[0m \u001b[0mtorch\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_functorch\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0mconfig\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 2\u001b[0;31m from torch._functorch.aot_autograd import (\n\u001b[0m\u001b[1;32m      3\u001b[0m     \u001b[0maot_function\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      4\u001b[0m     \u001b[0maot_module\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      5\u001b[0m     \u001b[0maot_module_simplified\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.13/dist-packages/torch/_functorch/aot_autograd.py\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[1;32m    155\u001b[0m     \u001b[0mstrict_zip\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    156\u001b[0m )\n\u001b[0;32m--> 157\u001b[0;31m \u001b[0;32mfrom\u001b[0m \u001b[0;34m.\u001b[0m\u001b[0mpartitioners\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0mdefault_partition\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    158\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    159\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.13/dist-packages/torch/_functorch/partitioners.py\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[1;32m     54\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     55\u001b[0m \u001b[0;32mfrom\u001b[0m \u001b[0;34m.\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0mconfig\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 56\u001b[0;31m \u001b[0;32mfrom\u001b[0m \u001b[0;34m.\u001b[0m\u001b[0m_activation_checkpointing\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mgraph_info_provider\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0mGraphInfoProvider\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m     57\u001b[0m from ._activation_checkpointing.knapsack import (\n\u001b[1;32m     58\u001b[0m     \u001b[0mdp_knapsack\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.13/dist-packages/torch/_functorch/_activation_checkpointing/graph_info_provider.py\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[1;32m      1\u001b[0m \u001b[0;32mfrom\u001b[0m \u001b[0mtyping\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0mAny\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mOptional\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      2\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 3\u001b[0;31m \u001b[0;32mimport\u001b[0m \u001b[0mnetworkx\u001b[0m \u001b[0;32mas\u001b[0m \u001b[0mnx\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      4\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      5\u001b[0m \u001b[0;32mfrom\u001b[0m \u001b[0mtorch\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mfx\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0mGraph\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mNode\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.13/dist-packages/networkx/__init__.py\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[1;32m     40\u001b[0m \u001b[0;32mfrom\u001b[0m \u001b[0mnetworkx\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mgenerators\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0;34m*\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     41\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 42\u001b[0;31m \u001b[0;32mfrom\u001b[0m \u001b[0mnetworkx\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0mreadwrite\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m     43\u001b[0m \u001b[0;32mfrom\u001b[0m \u001b[0mnetworkx\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mreadwrite\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0;34m*\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     44\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.13/dist-packages/networkx/readwrite/__init__.py\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[1;32m     13\u001b[0m \u001b[0;32mfrom\u001b[0m \u001b[0mnetworkx\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mreadwrite\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mgml\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0;34m*\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     14\u001b[0m \u001b[0;32mfrom\u001b[0m \u001b[0mnetworkx\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mreadwrite\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mgraphml\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0;34m*\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 15\u001b[0;31m \u001b[0;32mfrom\u001b[0m \u001b[0mnetworkx\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mreadwrite\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mgexf\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0;34m*\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m     16\u001b[0m \u001b[0;32mfrom\u001b[0m \u001b[0mnetworkx\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mreadwrite\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mjson_graph\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0;34m*\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     17\u001b[0m \u001b[0;32mfrom\u001b[0m \u001b[0mnetworkx\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mreadwrite\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mtext\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0;34m*\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mKeyboardInterrupt\u001b[0m: "
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "memory = model.get_memory_footprint() / 1e6\n",
+        "print(f\"Memory footprint: {memory:,.1f} MB\")"
+      ],
+      "metadata": {
+        "id": "bdbYaT8hWXWE"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## Looking under the hood at the Transformer model\n",
+        "\n",
+        "The next cell prints the HuggingFace `model` object for Llama.\n",
+        "\n",
+        "This model object is a Neural Network, implemented with the Python framework PyTorch. The Neural Network uses the architecture invented by Google scientists in 2017: the Transformer architecture.\n",
+        "\n",
+        "While we're not going to go deep into the theory, this is an opportunity to get some intuition for what the Transformer actually is.\n",
+        "\n",
+        "If you're completely new to Neural Networks, check out my [YouTube intro playlist](https://www.youtube.com/playlist?list=PLWHe-9GP9SMMdl6SLaovUQF2abiLGbMjs) for the foundations.\n",
+        "\n",
+        "Now take a look at the layers of the Neural Network that get printed in the next cell. Look out for this:\n",
+        "\n",
+        "- It consists of layers\n",
+        "- There's something called \"embedding\" - this takes tokens and turns them into 4,096 dimensional vectors. We'll learn more about this in Week 5.\n",
+        "- There are then 16 sets of groups of layers (32 for Llama 3.1) called \"Decoder layers\". Each Decoder layer contains three types of layer: (a) self-attention layers (b) multi-layer perceptron (MLP) layers (c) batch norm layers.\n",
+        "- There is an LM Head layer at the end; this produces the output\n",
+        "\n",
+        "Notice the mention that the model has been quantized to 4 bits.\n",
+        "\n",
+        "It's not required to go any deeper into the theory at this point, but if you'd like to, I've asked our mutual friend to take this printout and make a tutorial to walk through each layer. This also looks at the dimensions at each point. If you're interested, work through this tutorial after running the next cell:\n",
+        "\n",
+        "https://chatgpt.com/canvas/shared/680cbea6de688191a20f350a2293c76b"
+      ],
+      "metadata": {
+        "id": "w5mcojpzrD_y"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Execute this cell and look at what gets printed; investigate the layers\n",
+        "\n",
+        "model"
+      ],
+      "metadata": {
+        "id": "P0qmAD5ZtqWA"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### And if you want to go even deeper into Transformers\n",
+        "\n",
+        "In addition to looking at each of the layers in the model, you can actually look at the HuggingFace code that implements Llama using PyTorch.\n",
+        "\n",
+        "Here is the HuggingFace Transformers repo:  \n",
+        "https://github.com/huggingface/transformers\n",
+        "\n",
+        "And within this, here is the code for Llama 4:  \n",
+        "https://github.com/huggingface/transformers/blob/main/src/transformers/models/llama4/modeling_llama4.py\n",
+        "\n",
+        "Obviously it's not neceesary at all to get into this detail - the job of an AI engineer is to select, optimize, fine-tune and apply LLMs rather than to code a transformer in PyTorch. OpenAI, Meta and other frontier labs spent millions building and training these models. But it's a fascinating rabbit hole if you're interested!"
+      ],
+      "metadata": {
+        "id": "Kx_0SygM_nmA"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# OK, with that, now let's run the model!\n",
+        "\n",
+        "outputs = model.generate(inputs, max_new_tokens=80)\n",
+        "outputs[0]"
+      ],
+      "metadata": {
+        "id": "SkYEXzbotcud"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Well that doesn't make much sense!\n",
+        "# How about this..\n",
+        "\n",
+        "tokenizer.decode(outputs[0])"
+      ],
+      "metadata": {
+        "id": "ZXXnANipSUel"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Clean up memory\n",
+        "# Thank you Kuan L. for helping me get this to properly free up memory!\n",
+        "# If you select \"Show Resources\" on the top right to see GPU memory, it might not drop down right away\n",
+        "# But it does seem that the memory is available for use by new models in the later code.\n",
+        "\n",
+        "del model, inputs, tokenizer, outputs\n",
+        "gc.collect()\n",
+        "torch.cuda.empty_cache()"
+      ],
+      "metadata": {
+        "id": "2oL0RWU2ttZf"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## A couple of quick notes on the next block of code:\n",
+        "\n",
+        "I'm using a HuggingFace utility called TextStreamer so that results stream back.\n",
+        "To stream results, we simply replace:  \n",
+        "`outputs = model.generate(inputs, max_new_tokens=80)`  \n",
+        "With:  \n",
+        "`streamer = TextStreamer(tokenizer)`  \n",
+        "`outputs = model.generate(inputs, max_new_tokens=80, streamer=streamer)`\n",
+        "\n",
+        "Also I've added the argument `add_generation_prompt=True` to my call to create the Chat template. This ensures that Phi generates a response to the question, instead of just predicting how the user prompt continues. Try experimenting with setting this to False to see what happens. You can read about this argument here:\n",
+        "\n",
+        "https://huggingface.co/docs/transformers/main/en/chat_templating#what-are-generation-prompts\n",
+        "\n",
+        "Thank you to student Piotr B for raising the issue!"
+      ],
+      "metadata": {
+        "id": "iDCeJ20e4Hxx"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Wrapping everything in a function - and adding Streaming and generation prompts\n",
+        "\n",
+        "def generate(model, messages, quant=True, max_new_tokens=80):\n",
+        "  tokenizer = AutoTokenizer.from_pretrained(model)\n",
+        "  tokenizer.pad_token = tokenizer.eos_token\n",
+        "  input_ids = tokenizer.apply_chat_template(messages, return_tensors=\"pt\", add_generation_prompt=True).to(\"cuda\")\n",
+        "  attention_mask = torch.ones_like(input_ids, dtype=torch.long, device=\"cuda\")\n",
+        "  streamer = TextStreamer(tokenizer)\n",
+        "  if quant:\n",
+        "    model = AutoModelForCausalLM.from_pretrained(model, quantization_config=quant_config).to(\"cuda\")\n",
+        "  else:\n",
+        "    model = AutoModelForCausalLM.from_pretrained(model).to(\"cuda\")\n",
+        "  outputs = model.generate(input_ids=input_ids, attention_mask=attention_mask, max_new_tokens=max_new_tokens, streamer=streamer)\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "RO_VYZ3DZ7cs"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "generate(PHI, messages)"
+      ],
+      "metadata": {
+        "id": "RFjaY4Pdvbfy"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## Accessing Gemma from Google\n",
+        "\n",
+        "A student let me know (thank you, Alex K!) that Google also now requires you to accept their terms in HuggingFace before you use Gemma.\n",
+        "\n",
+        "Please visit their model page at this link and confirm you're OK with their terms, so that you're granted access.\n",
+        "\n",
+        "https://huggingface.co/google/gemma-3-270m-it"
+      ],
+      "metadata": {
+        "id": "hxZQmZDCe4Jf"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "messages = [\n",
+        "    {\"role\": \"user\", \"content\": \"Tell a light-hearted joke for a room of Data Scientists\"}\n",
+        "  ]\n",
+        "generate(GEMMA, messages, quant=False)"
+      ],
+      "metadata": {
+        "id": "q1JW41D-viGy"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "generate(QWEN, messages)"
+      ],
+      "metadata": {
+        "id": "0m8yjMB3ZTp3"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "generate(DEEPSEEK, messages, quant=False, max_new_tokens=500)"
+      ],
+      "metadata": {
+        "id": "SyTvb4ESS3u_"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "ZWCHrOD-1xhp"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
